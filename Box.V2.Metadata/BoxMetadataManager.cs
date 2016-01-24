@@ -27,8 +27,8 @@ namespace Box.V2.Managers
         private const string DefaultTypeInstance = "properties";
 
 
-        public BoxMetadataManager(IBoxConfig config, IBoxService service, IBoxConverter converter, IAuthRepository auth)
-            : base(config, service, new BoxMetadataJsonConverter(), auth) { }
+        public BoxMetadataManager(IBoxConfig config, IBoxService service, IBoxConverter converter, IAuthRepository auth, string asUser)
+            : base(config, service, new BoxMetadataJsonConverter(), auth, asUser) { }
 
 
         /// <summary>
